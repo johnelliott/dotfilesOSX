@@ -5,8 +5,7 @@
 # Install EMACS
 brew install emacs --use-git-head --HEAD
 
-# Setup git
-git config --global core.editor emacs
+
 
 # Install jshint to allow checking of JS code within emacs                                                                                                                                                                                 
 # http://jshint.com/                                                                                                                                                                                                                                    
