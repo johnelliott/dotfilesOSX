@@ -20,3 +20,6 @@ else
 	fi;
 fi;
 unset doIt;
+
+# Bootstrap additional apps
+# source apps.sh;
