@@ -1,0 +1,42 @@
+# .extra?
+# anyway, this is what I want 
+
+brew install emacs --use-git-head --HEAD
+# brew install grep --default-names # doesn't work
+# brew install screen # doesn't work
+
+# Setup git
+git config --global core.editor emacs
+
+# Install jshint to allow checking of JS code within emacs                                                                                                                                                                                 
+# http://jshint.com/                                                                                                                                                                                                                                    
+npm install -g jshint
+
+# Install Grunt for automated node builds                                                                                                                                                                                                               
+# http://gruntjs.com/getting-started for details                                                                                                                                                                                                        
+npm install -g grunt-cli
+npm install -g grunt-init
+
+# Install Bower for front-end package management                                                                                                                                                                                                               
+# http://http://bower.io/ for details                                                                                                                                                                                                        
+npm install -g bower
+
+# Install Yeoman for project scaffolding
+npm install -g yo
+
+# # Install Heroku toolbelt                                                                                                                                                                                                                               
+# # https://toolbelt.heroku.com/                                                                                                                                                                                                                    
+wget -qO- https://toolbelt.heroku.com/install.sh | sh
+
+# # Change OSX preferences
+# Disable dashboard
+defaults write com.apple.dashboard mcx-disabled -boolean YES && killall Dock
+
+# Git credentials
+# Not in the repository, to prevent people from accidentally committing under my name
+GIT_AUTHOR_NAME="John Elliott"
+GIT_COMMITTER_NAME="$GIT_AUTHOR_NAME"
+git config --global user.name "$GIT_AUTHOR_NAME"
+GIT_AUTHOR_EMAIL="johnelliott703@gmail.com"
+GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
+git config --global user.email "$GIT_AUTHOR_EMAIL"
