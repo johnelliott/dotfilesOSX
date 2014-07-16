@@ -1,5 +1,16 @@
-# Make vim the default editor
-export EDITOR="vim";
+# # Configure PATH
+# #  - These are line by line so that you can kill one without affecting the others.
+# #  - Lowest priority first, highest priority last.
+# export PATH=$PATH
+# export PATH=$HOME/bin:$PATH
+# export PATH=/usr/bin:$PATH
+# export PATH=/usr/local/bin:$PATH
+# export PATH=/usr/local/sbin:$PATH
+# export PATH=/usr/local/heroku/bin:$PATH # Heroku: https://toolbelt.heroku.com/standalone
+
+# Make emacs the default editor
+export EDITOR="emacs -nw";
+export VISUAL="emacs -nw"; # should this be sublimetext?
 
 # Larger bash history (allow 32³ entries; default is 500)
 export HISTSIZE=32768;
@@ -20,6 +31,7 @@ export MANPAGER="less -X";
 
 # Always enable colored `grep` output
 export GREP_OPTIONS="--color=auto";
+# export GREP_COLOR="1;31" # green for matches, this may break?!
 
 # Link Homebrew casks in `/Applications` rather than `~/Applications`
 export HOMEBREW_CASK_OPTS="--appdir=/Applications";

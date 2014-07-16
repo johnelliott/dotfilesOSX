@@ -1,4 +1,5 @@
 # Mathias’s dotfiles
+# Modified in some places by John
 
 ![Screenshot of my shell prompt](http://i.imgur.com/EkEtphC.png)
 

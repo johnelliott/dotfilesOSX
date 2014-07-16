@@ -1,3 +1,9 @@
+# Safety
+alias rm="rm -i"
+alias mv="mv -i"
+alias cp="cp -i"
+set -o noclobber
+
 # Easier navigation: .., ..., ...., ....., ~ and -
 alias ..="cd .."
 alias ...="cd ../.."
@@ -7,13 +13,24 @@ alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
 # Shortcuts
-alias d="cd ~/Documents/Dropbox"
+alias d="cd ~/Dropbox"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
-alias p="cd ~/projects"
+alias dev="cd ~/Dropbox/dev"
 alias g="git"
 alias h="history"
 alias j="jobs"
+# Additional Shortcuts
+alias cl='clear'
+alias dir='ls --color=auto --format=vertical'
+alias vdir='ls --color=auto --format=long'
+alias du='du -ch --max-depth=1'
+# alias l="ls -CF"
+# alias la="ls -A"
+alias ll="ls -alrtFGh"
+alias m='less'
+alias md='mkdir'
+alias treeacl='tree -A -C -L 2'
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
@@ -37,6 +54,10 @@ export LS_COLORS='no=00:fi=00:di=01;34:ln=01;36:pi=40;33:so=01;35:do=01;35:bd=40
 
 # Enable aliases to be sudo’ed
 alias sudo='sudo '
+
+# Text and editor commands
+alias em='emacs -nw'     # No X11 windows
+alias eqq='emacs -nw -Q' # No config and no X11
 
 # Get week number
 alias week='date +%V'

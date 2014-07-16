@@ -30,10 +30,11 @@ install wget --enable-iri
 # install narwhal
 
 # Install more recent versions of some OS X tools
+install emacs --use-git-head --HEAD
 install vim --override-system-vi
 install homebrew/dupes/grep
 install homebrew/dupes/screen
-install homebrew/php/php55 --with-gmp
+# install homebrew/php/php55 --with-gmp
 
 # Install other useful binaries
 install ack
