@@ -12,7 +12,7 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 brew update
 
 # Upgrade any already-installed formulae.
-brew upgrade
+# brew upgrade
 
 # Install GNU core utilities (those that come with OS X are outdated).
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
@@ -37,8 +37,8 @@ brew install wget --with-iri
 # Install RingoJS and Narwhal.
 # Note that the order in which these are installed is important;
 # see http://git.io/brew-narwhal-ringo.
-brew install ringojs
-brew install narwhal
+# brew install ringojs
+# brew install narwhal
 
 # Install more recent versions of some OS X tools.
 brew install vim --override-system-vi
@@ -96,7 +96,17 @@ brew install zopfli
 
 # Install Node.js. Note: this installs `npm` too, using the recommended
 # installation method.
-brew install node
+# brew install node
+
+# Work stuff
+brew install spectacle
+brew install cask
+brew install caskroom/cask/brew-cask
+brew install hipchat
+brew install mysql
+brew install emacs
+brew install redis
 
 # Remove outdated versions from the cellar.
 brew cleanup
+

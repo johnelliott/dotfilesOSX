@@ -22,3 +22,10 @@ cask install iterm2 2> /dev/null
 # cask install ukelele 2> /dev/null
 # cask install virtualbox 2> /dev/null
 # cask install vlc 2> /dev/null
+
+
+# Social Tables stuff
+brew cask install sublime-text
+brew cask install spectacle
+brew cask install hipchat
+brew cask install firefox
