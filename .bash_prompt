@@ -110,7 +110,13 @@ PS1+="\[${userStyle}\]\u"; # username
 PS1+="\[${white}\] at ";
 PS1+="\[${hostStyle}\]\h"; # host
 PS1+="\[${white}\] nvm ";
-PS1+="\[${red}\]$(nvm version)"; #nvm test
+
+#PS1+="\[${red}\]$(nvm version)"; #nvm test
+if [ "x" != "x$NVM_BIN" ]; then
+    NVM_VERSION=$(basename $(dirname $NVM_BIN))
+    PS1+="\[${red}\]<nvm:$NVM_VERSION>\n"
+fi
+
 PS1+="\[${white}\] in ";
 PS1+="\[${green}\]\w"; # working directory
 PS1+="\$(prompt_git \"${white} on ${violet}\")"; # Git repository details
