@@ -1,0 +1,4 @@
+[
+	{ "keys": ["alt+b"], "command": "move", "args": {"by": "words", "forward": false} },
+	{ "keys": ["alt+f"], "command": "move", "args": {"by": "word_ends", "forward": true} }
+]
