@@ -72,6 +72,8 @@
 		fi \
 	}; f"
 
+	# view tree
+	tree = log --graph --decorate --pretty=oneline --abbrev-commit
 [apply]
 
 	# Detect whitespace errors when applying a patch
