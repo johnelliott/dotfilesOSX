@@ -46,7 +46,7 @@ brew install vim --override-system-vi
 brew install homebrew/dupes/grep
 brew install homebrew/dupes/openssh
 brew install homebrew/dupes/screen
-brew install homebrew/php/php55 --with-gmp
+# brew install homebrew/php/php55 --with-gmp
 
 # Install font tools.
 brew tap bramstein/webfonttools
@@ -104,13 +104,17 @@ brew install zopfli
 # Install Node.js. Note: this installs `npm` too, using the recommended
 # installation method.
 brew install node
+brew install nvm
 
 # More stuff
 brew install cask
 brew install caskroom/cask/brew-cask
 brew install mysql
-brew install emacs
 brew install redis
+
+# Install editors
+brew install emacs --use-git-head --HEAD
+brew install vim
 
 # Remove outdated versions from the cellar.
 brew cleanup

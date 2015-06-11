@@ -4,7 +4,7 @@
 #  - These are line by line so that you can kill one without affecting the others.
 #  - Lowest priority first, highest priority last.
 # what i want my new path to be: 
-# /usr/local/heroku/bin:/usr/local/git/bin:/usr/local/sbin:/usr/local/bin:/Users/john/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# /usr/local/git/bin:/usr/local/sbin:/usr/local/bin:/Users/john/bin:/usr/sbin:/usr/bin:/sbin:/bin
 export PATH=$PATH
 export PATH=$HOME/bin:$PATH
 export PATH=/bin:$PATH
@@ -14,4 +14,5 @@ export PATH=/usr/sbin:$PATH
 export PATH=/usr/local/sbin:$PATH
 export PATH=/usr/local/bin:$PATH
 export PATH=/usr/local/git/bin:$PATH
-export PATH=/usr/local/heroku/bin:$PATH # Heroku: https://toolbelt.heroku.com/standalone
+# node developer #protip: add `node_modules/.bin` to your `PATH` so that all the bin scripts installed by npm modules are available on the cli from the root of the project directory, e.g., mocha, browserify, gulp.
+export PATH=node_modules/.bin:$:PATH

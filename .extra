@@ -6,6 +6,6 @@ git config --global user.name "$GIT_AUTHOR_NAME"
 GIT_AUTHOR_EMAIL="johnelliott703@gmail.com"
 GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
 git config --global user.email "$GIT_AUTHOR_EMAIL"
-# Setup git to use emacs
+# Setup git to use vim
 git config --global push.default simple
-git config --global core.editor emacs
+git config --global core.editor vim
