@@ -1,10 +1,9 @@
 #!/usr/bin/env bash
 
-# Install more apps
-
-# Install jshint
-# http://jshint.com/
+# Install npm modules
 npm install -g jshint
-# Also install eslint for es6 linting
 npm install -g eslint
 
+# install hombrew packages
+# https://github.com/github/hub for better git commands, see the completion script they have
+brew install hub

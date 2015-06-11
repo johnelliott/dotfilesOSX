@@ -5,14 +5,8 @@
 #  - Lowest priority first, highest priority last.
 # what i want my new path to be: 
 # /usr/local/git/bin:/usr/local/sbin:/usr/local/bin:/Users/john/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# this is the path without bash profie: /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 export PATH=$PATH
-export PATH=$HOME/bin:$PATH
-export PATH=/bin:$PATH
-export PATH=/sbin:$PATH
-export PATH=/usr/bin:$PATH
-export PATH=/usr/sbin:$PATH
-export PATH=/usr/local/sbin:$PATH
-export PATH=/usr/local/bin:$PATH
 export PATH=/usr/local/git/bin:$PATH
 # node developer #protip: add `node_modules/.bin` to your `PATH` so that all the bin scripts installed by npm modules are available on the cli from the root of the project directory, e.g., mocha, browserify, gulp.
-export PATH=node_modules/.bin:$:PATH
+export PATH=node_modules/.bin:$PATH
