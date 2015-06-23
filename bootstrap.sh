@@ -21,6 +21,7 @@ else
 fi;
 unset doIt;
 
+# install Vundle for vim plugins
 # Bootstrap additional apps
 # source apps.sh;
 # do brewfile and caskfile?
