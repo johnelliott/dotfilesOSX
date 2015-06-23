@@ -51,6 +51,8 @@ set tabstop=4
 set softtabstop=0
 set noexpandtab
 set shiftwidth=4
+" don't soft-wrap text
+set nowrap
 " Show “invisible” characters
 set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
 set list

@@ -1,6 +1,6 @@
 # Make emacs the default editor
-export EDITOR="emacs -nw";
-export VISUAL="emacs -nw"; # should this be sublimetext?
+export EDITOR="vim";
+export VISUAL="vim";
 
 
 # Enable persistent REPL history for `node`.
