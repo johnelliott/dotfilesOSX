@@ -114,7 +114,6 @@ brew install redis
 
 # Install editors
 brew install emacs --use-git-head --HEAD
-brew install vim
 
 # Remove outdated versions from the cellar.
 brew cleanup
