@@ -135,8 +135,6 @@ if exists("&relativenumber")
 endif
 " Start scrolling three lines before the horizontal window border
 set scrolloff=3
-" set GUI scroll bars off, virtual tabs on, menu bar on
-set guioptions=meg
 
 " Strip trailing whitespace (,ss)
 function! StripWhitespace()
