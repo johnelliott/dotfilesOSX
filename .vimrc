@@ -12,6 +12,7 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'bling/vim-airline'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'editorconfig/editorconfig-vim'
 "Plugin 'kien/ctrlp.vim'
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
@@ -94,6 +95,8 @@ set number
 syntax on
 " Highlight current line
 set cursorline
+hi CursorLine ctermbg=8
+"hi CursorLineNr ctermfg=3
 " Make tabs as wide as four spaces
 set tabstop=4
 set softtabstop=0
@@ -135,7 +138,10 @@ if exists("&relativenumber")
 endif
 " Start scrolling three lines before the horizontal window border
 set scrolloff=3
-
+" set GUI scroll bars off, virtual tabs on, menu bar on
+set guioptions=mg
+" set line height
+set linespace=0
 " Strip trailing whitespace (,ss)
 function! StripWhitespace()
 	let save_cursor = getpos(".")
