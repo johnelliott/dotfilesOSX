@@ -35,24 +35,13 @@ brew install bash-completion2
 # Install `wget` with IRI support.
 brew install wget --with-iri
 
-# Install RingoJS and Narwhal.
-# Note that the order in which these are installed is important;
-# see http://git.io/brew-narwhal-ringo.
-# brew install ringojs
-# brew install narwhal
-
 # Install more recent versions of some OS X tools.
 brew install vim --override-system-vi
+brew install emacs --use-git-head --HEAD
 brew install homebrew/dupes/grep
 brew install homebrew/dupes/openssh
 brew install homebrew/dupes/screen
 # brew install homebrew/php/php55 --with-gmp
-
-# Install font tools.
-brew tap bramstein/webfonttools
-brew install sfnt2woff
-brew install sfnt2woff-zopfli
-brew install woff2
 
 # Install some CTF tools; see https://github.com/ctfs/write-ups.
 brew install aircrack-ng
@@ -79,6 +68,9 @@ brew install tcptrace
 brew install ucspi-tcp # `tcpserver` etc.
 brew install xpdf
 brew install xz
+# https://github.com/github/hub for better git commands, see the completion script they have
+brew install hub
+brew install ag
 
 # Install other useful binaries.
 brew install ack
@@ -106,14 +98,9 @@ brew install zopfli
 brew install node
 brew install nvm
 
-# More stuff
-brew install cask
-brew install caskroom/cask/brew-cask
-brew install mysql
-brew install redis
-
-# Install editors
-brew install emacs --use-git-head --HEAD
+# Install npm modules
+npm install -g jshint
+npm install -g eslint
 
 # Remove outdated versions from the cellar.
 brew cleanup
