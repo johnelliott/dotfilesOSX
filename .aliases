@@ -16,13 +16,21 @@ alias -- -="cd -"
 alias d="cd ~/Dropbox"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
-alias g="git"
+# Git shortcuts
 alias git="hub"
+alias g="git"
 alias gs="git status"
 alias gb="hub browse"
+alias gg="git log --oneline --graph"
+alias gl="git log"
+alias gco="git checkout"
+alias gcb="git checkout -b"
+alias gp="git pull"
+alias gpr="git pull --rebase"
+
+# Additional Shortcuts
 alias h="history"
 alias j="jobs"
-# Additional Shortcuts
 alias cl='clear'
 alias dir='ls --color=auto --format=vertical'
 alias vdir='ls --color=auto --format=long'
