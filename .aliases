@@ -21,8 +21,8 @@ alias git="hub"
 alias g="git"
 alias gs="git status"
 alias gb="hub browse"
-alias gg="git log --oneline --graph"
-alias gl="git log"
+alias gg="git tree"
+alias gl="git l"
 alias gco="git checkout"
 alias gcb="git checkout -b"
 alias gp="git pull"
@@ -41,7 +41,9 @@ alias ll="ls -alrtFGh"
 alias m='less'
 alias md='mkdir'
 alias treeacl='tree -A -C -L 2'
-
+alias ap='ansible-playbook'
+# use silver-searcher with just filenames as output
+alias agl='ag -l'
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
 	colorflag="--color"
