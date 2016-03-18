@@ -6,12 +6,12 @@ for file in ~/.{path,bash_prompt,exports,aliases,functions,extra}; do
 done;
 unset file;
 
-# Add `~/bin` to the `$PATH`
-export PATH="$HOME/bin:$PATH";
-
 # Make NVM available
 export NVM_DIR="/Users/john/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# Use vi editing mode in Bash
+set -o vi
 
 # Case-insensitive globbing (used in pathname expansion)
 shopt -s nocaseglob;
@@ -50,5 +50,3 @@ complete -W "NSGlobalDomain" defaults;
 
 # Add `killall` tab completion for common apps
 complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Chrome Safari iTunes SystemUIServer Terminal Twitter" killall;
-
-
