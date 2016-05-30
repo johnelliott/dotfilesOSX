@@ -22,7 +22,7 @@ Don't forget to change your shell in OS X 10.10.x: https://github.com/mathiasbyn
 
 ```bash
 sudo bash -c 'echo /usr/local/bin/bash >> /etc/shells'
-chsh -s /usr/local/bin/bash
+chsh -s /usr/local/bin/zsh
 ```
 
 Alternatively, to update while avoiding the confirmation prompt:
